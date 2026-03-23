@@ -5,3 +5,11 @@
 *.Rhistory
 
 *.DS_Store
+
+
+*.aux
+*.fdb
+*.log
+*.fls
+*.synctex.gz
+*.fdb_latexmk
