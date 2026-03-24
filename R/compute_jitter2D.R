@@ -1,5 +1,4 @@
-# Combine 3 parameters for describe jitter in 2D, each parameter has two posible levels.
-
+#' Combine 3 parameters for describe jitter in 2D, each parameter has two posible levels.
 #' @param  noise: Random or Quasirandom
 #' @param dir: Global or Local
 #' @param Voronoi: True or False (not implemented yet)

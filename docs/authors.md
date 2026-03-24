@@ -16,14 +16,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/natydasilva/jitter2D/blob/HEAD/DESCRIPTION)
 
-da Silva N, Alvarez-Castro I, Cook D, Gamage J (2025). *jitter2D: 2D
+da Silva N, Alvarez-Castro I, Cook D, Gamage J (2026). *ggscatie: 2D
 jittered scatterplot*. R package version 0.0.1,
 <https://github.com/natydasilva/jitter2D>.
 
     @Manual{,
-      title = {jitter2D: 2D jittered scatterplot},
+      title = {ggscatie: 2D jittered scatterplot},
       author = {Natalia {da Silva} and Ignacio Alvarez-Castro and Dianne Cook and Jayani P. Gamage},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.1},
       url = {https://github.com/natydasilva/jitter2D},
     }

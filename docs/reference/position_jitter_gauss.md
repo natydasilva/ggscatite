@@ -30,9 +30,7 @@ position_jitter_gauss(weight = NULL, seed = NA)
 ## See also
 
 Other position adjustments:
-[`position_jitter_quasi()`](https://github.com/natydasilva/jitter2D/reference/position_jitter_quasi.md),
-[`position_jitter_quasiloc()`](https://github.com/natydasilva/jitter2D/reference/position_jitter_quasiloc.md),
-[`position_jitter_quasitog()`](https://github.com/natydasilva/jitter2D/reference/position_jitter_quasitog.md)
+[`position_jitter_quasi()`](https://github.com/natydasilva/ggscatie/reference/position_jitter_quasi.md)
 
 ## Examples
 

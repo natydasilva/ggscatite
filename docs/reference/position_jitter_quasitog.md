@@ -27,6 +27,6 @@ position_jitter_quasitog(weight = NULL, seed = NA, loc = FALSE)
 ## See also
 
 Other position adjustments:
-[`position_jitter_gauss()`](https://github.com/natydasilva/jitter2D/reference/position_jitter_gauss.md),
-[`position_jitter_quasi()`](https://github.com/natydasilva/jitter2D/reference/position_jitter_quasi.md),
-[`position_jitter_quasiloc()`](https://github.com/natydasilva/jitter2D/reference/position_jitter_quasiloc.md)
+[`position_jitter_gauss()`](https://github.com/natydasilva/ggscatie/reference/position_jitter_gauss.md),
+[`position_jitter_quasi()`](https://github.com/natydasilva/ggscatie/reference/position_jitter_quasi.md),
+[`position_jitter_quasiloc()`](https://github.com/natydasilva/ggscatie/reference/position_jitter_quasiloc.md)

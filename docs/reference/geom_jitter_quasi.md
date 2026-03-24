@@ -1,10 +1,9 @@
-# Jittered 2D points based on Sobolev sequence
+# Jittered 2D points based on Sobol sequence (toggle local/global)
 
 The jitter geom is a convenient shortcut for \`geom_point(position =
-"jitterquasi")\`. It adds a small amount of random variation to the
-location of each point using bivariate normal distribution, and is a
-useful way of handling overplotting caused by discreteness in smaller
-datasets.
+"jitterquasi")\`. It adds a small amount of variation to the location of
+each point using bivariate normal distribution derived from Sobol
+sequences. This is useful for handling overplotting in smaller datasets.
 
 ## Usage
 
@@ -13,7 +12,7 @@ geom_jitter_quasi(
   mapping = NULL,
   data = NULL,
   stat = "identity",
-  position = "jitterquasi",
+  position = NULL,
   ...,
   weight = NULL,
   na.rm = FALSE,
@@ -131,9 +130,7 @@ geom_jitter_quasi(
 
 - weight:
 
-  spread factor.
-
-  If omitted, just include the spread in the data.
+  Spread factor. If omitted, it is computed automatically.
 
 - na.rm:
 
@@ -159,8 +156,8 @@ geom_jitter_quasi(
 
 - loc:
 
-  logical, if its TRUE it uses the Sobol sequence to generate points
-  locally, and it is false generate a complete sobol sequence for all
+  Logical. If TRUE, generates points locally per (x,y) duplicate using
+  Sobol sequence. If FALSE, generates a global Sobol sequence for all
   points.
 
 ## Aesthetics GeomPoint
@@ -175,11 +172,11 @@ another way of looking at the conditional distribution of a variable
 ## Examples
 
 ``` r
-# plot categorical variables of mtcars
-require("ggplot2")
+library(ggplot2)
 data(mpg)
-ggplot(mpg, aes(x=cty, y=hwy)) + geom_point()
+ggplot(mpg, aes(x = cty, y = hwy)) + geom_point()
 
-ggplot(mpg, aes(x=cty, y=hwy)) + geom_jitter_quasi(loc=TRUE)
+ggplot(mpg, aes(x = cty, y = hwy)) + geom_jitter_quasi(loc = TRUE)
 
+ggplot(mpg, aes(x = cty, y = hwy)) + geom_jitter_quasi(loc = FALSE)
 ```

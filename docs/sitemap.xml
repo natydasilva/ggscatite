@@ -1,16 +1,19 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>https://github.com/natydasilva/jitter2D/404.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/authors.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/index.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/dayles.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/geom_jitter_gauss.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/geom_jitter_quasi.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/geom_jitter_quasiloc.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/geom_jitter_quasitog.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/index.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/position_jitter_gauss.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/position_jitter_quasi.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/position_jitter_quasiloc.html</loc></url>
-<url><loc>https://github.com/natydasilva/jitter2D/reference/position_jitter_quasitog.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/404.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/authors.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/index.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/PositionJitterquasi.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/PositionJitterquasiloc.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/compute_jitter2D.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/dayles.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/geom_jitter_gauss.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/geom_jitter_quasi.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/geom_jitter_quasiloc.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/geom_jitter_quasitog.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/index.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/position_jitter_gauss.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/position_jitter_quasi.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/position_jitter_quasiloc.html</loc></url>
+<url><loc>https://github.com/natydasilva/ggscatie/reference/position_jitter_quasitog.html</loc></url>
 </urlset>
 

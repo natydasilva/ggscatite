@@ -1,11 +1,11 @@
-# `jitter2D` package
+# `ggscatie` package
 
 Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P.,
 Gamage.
 
 ## Overview
 
-`jitter2D` is an R package that extends ggplot2 to create bivariate
+`ggscatie` is an R package that extends ggplot2 to create bivariate
 jittered scatterplots. This package provides specialized functionality
 for adding controlled random noise in two dimensions, making it easier
 to visualize overlapping data points in scatterplots where both x and y
@@ -16,7 +16,7 @@ variables may have discrete or semi-discrete values.
 When creating scatterplots with discrete or rounded data, points often
 overlap, making it difficult to assess the true density and distribution
 of observations. While base R and ggplot2 provide one-dimensional
-jittering (typically along one axis), `jitter2D` extends this concept to
+jittering (typically along one axis), `ggscatie` extends this concept to
 apply jittering simultaneously to both x and y coordinates.
 
 Currently there are two implemented methods:
@@ -24,18 +24,19 @@ Currently there are two implemented methods:
 - `geom_jitter_gauss`: Adds Bivariate Gaussian random noise
 
 - `geom_jitter_quasi`: Adds Quasi-random noise based on Sobolev
-  sequences
+  sequences. If loc = TRUE a local sobol sequence is generated and if
+  loc = FALSE the sequence is generated for the complete data set.
 
 ## Installation
 
-You can install the development version of jitter2D from GitHub:
+You can install the development version of ggscatie from GitHub:
 
 ``` r
 # Install devtools if you haven't already
 install.packages("devtools")
 
-# Install jitter2D from GitHub
-devtools::install_github("natydasilva/jitter2D")
+# Install ggscatie from GitHub
+devtools::install_github("natydasilva/ggscatie")
 ```
 
 ## Usage
@@ -59,9 +60,8 @@ base <- ggplot(dayles, aes(x = ash, y = beg)) +
 
 p1 <- base + geom_jitter() + labs(title = 'Jitter') + theme(aspect.ratio = 1)
 p2 <- base + geom_jitter_gauss() + labs(title = 'Gaussian')  + theme(aspect.ratio = 1)
-p3 <- base + geom_jitter_quasi() + labs(title = 'Sobol seq.')+ theme(aspect.ratio = 1)
-p4 <- base + geom_jitter_quasiloc() + labs(title = 'Local Sobol seq.') + theme(aspect.ratio = 1)
-
+p3 <- base + geom_jitter_quasi(loc = FALSE) + labs(title = 'Sobol seq.')+ theme(aspect.ratio = 1)
+p4 <- base + geom_jitter_quasi(loc = TRUE) + labs(title = 'Local Sobol seq.') + theme(aspect.ratio = 1)
 
 (p1 + p2) / (p3 + p4)
 ```
@@ -72,7 +72,7 @@ p4 <- base + geom_jitter_quasiloc() + labs(title = 'Local Sobol seq.') + theme(a
 
 ``` r
 library(ggplot2)
-library(jitter2D)
+library(ggscatie)
 library(patchwork)
 
 data(mpg)
@@ -89,22 +89,27 @@ p2 <- p +
 
 p1 <- p + geom_jitter() + theme(aspect.ratio = 1) + labs(title = 'Jitter')
 
-p3 <- p + geom_jitter_quasi() + theme(aspect.ratio = 1) + labs(title = 'Sobol seq.')
+p3 <- p + geom_jitter_quasi(loc = FALSE) + theme(aspect.ratio = 1) + labs(title = 'Sobol seq.')
 
-p4 <- p + geom_jitter_quasiloc() + theme(aspect.ratio = 1) + labs(title = 'Local Sobol seq.')
+p4 <- p + geom_jitter_quasi(loc =TRUE) + theme(aspect.ratio = 1) + labs(title = 'Local Sobol seq.')
   
 
 
 (p0 + p1) / (p2 + p3+p4) 
 ```
 
-![Example jitter2D plots for mpg dataset](reference/figures/plot_ej.png)
+![Example ggscatie plots for mpg dataset](reference/figures/plot_ej.png)
 
 ## To Do list
 
-- Improve quasi random implemantation
+- Include other extensions: nonparametric instead of Gaussian
 
-- Work in the pkg documentation and webpage
+  ``` R
+  - kde did'n work as we expected
+  - should use hdr_2d() from hdrcde package 
+  ```
+
+- Work in the pkg documentation, webpage, sticker
 
 - Experiment to evaluate different methods
 
