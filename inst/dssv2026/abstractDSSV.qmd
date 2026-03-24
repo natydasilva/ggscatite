@@ -1,0 +1,23 @@
+---
+title: "Two-dimensional jittering with ggscatie"
+format: html
+---
+
+**Abstract** 
+For various reasons it is useful for spreading points in dotplot or scatterplot displays. When points are overplotted in a display the assessment of the distribution or association between variables may not be accurately interpreted. There is a long history of using dotplots for examining distributions, with a variety of recommended methods for spreading apart identical points. 
+
+
+In this work, methods for adding controlled random noise in two dimensions (i.e. jittering) are introduced. The main goal for this consist in making it easier to visualize overlapping data points in scatter plots where both x and y variables may have discrete or semi-discrete values.  
+
+
+Two main parameters are combined to create a two-dimensional jittering of points. First the noise generation, which can be random based on a standard distribution like \textit{uniform} or \textit{Gaussian}, or using a quasi-random scheme such as \textit{Sobolev} sequence. Second, it is possible to add directionality or correlation to the noise. This correlation is set based on a global pattern of the points or local where only is affected by closer data points.
+
+
+The methods are implemented in `gscatie` R package that extends `geom_jitter()` on two dimensions, and is accecible on https://github.com/natydasilva/ggscatie 
+
+
+**Authors**: 
+Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P., Gamage.
+
+**github**: 
+https://github.com/natydasilva/jitter2D
