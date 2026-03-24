@@ -1,5 +1,5 @@
 
-`jitter2D` package <img src="man/figures/logo.png" align="right" height="139" alt="" />
+`ggscatie` package <img src="man/figures/logo.png" align="right" height="139" alt="" />
 ======================
 Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P., Gamage.
 
@@ -10,11 +10,11 @@ Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P., Gamage.
 
 ## Overview
 
-`jitter2D` is an R package that extends ggplot2 to create bivariate jittered scatterplots. This package provides specialized functionality for adding controlled random noise in two dimensions, making it easier to visualize overlapping data points in scatterplots where both x and y variables may have discrete or semi-discrete values.
+`ggscatie` is an R package that extends ggplot2 to create bivariate jittered scatterplots. This package provides specialized functionality for adding controlled random noise in two dimensions, making it easier to visualize overlapping data points in scatterplots where both x and y variables may have discrete or semi-discrete values.
 
 ## Description
 
-When creating scatterplots with discrete or rounded data, points often overlap, making it difficult to assess the true density and distribution of observations. While base R and ggplot2 provide one-dimensional jittering (typically along one axis), `jitter2D` extends this concept to apply jittering simultaneously to both x and y coordinates.
+When creating scatterplots with discrete or rounded data, points often overlap, making it difficult to assess the true density and distribution of observations. While base R and ggplot2 provide one-dimensional jittering (typically along one axis), `ggscatie` extends this concept to apply jittering simultaneously to both x and y coordinates.
 
 Currently there are two implemented methods:
 
@@ -24,14 +24,14 @@ Currently there are two implemented methods:
 
 ## Installation
 
-You can install the development version of jitter2D from GitHub:
+You can install the development version of ggscatie from GitHub:
 
 ```r
 # Install devtools if you haven't already
 install.packages("devtools")
 
-# Install jitter2D from GitHub
-devtools::install_github("natydasilva/jitter2D")
+# Install ggscatie from GitHub
+devtools::install_github("natydasilva/ggscatie")
 ```
 
 ## Usage
@@ -78,7 +78,7 @@ p4 <- base + geom_jitter_quasi(loc = TRUE) + labs(title = 'Local Sobol seq.') + 
 
 ```r
 library(ggplot2)
-library(jitter2D)
+library(ggscatie)
 library(patchwork)
 
 data(mpg)
@@ -104,7 +104,7 @@ p4 <- p + geom_jitter_quasi(loc =TRUE) + theme(aspect.ratio = 1) + labs(title = 
 (p0 + p1) / (p2 + p3+p4) 
 
 ```
-<img src="man/figures/plot_ej.png" alt="Example jitter2D plots for mpg dataset" />
+<img src="man/figures/plot_ej.png" alt="Example ggscatie plots for mpg dataset" />
 
 <!--![](man/figures/plot_ej.png)-->
 
