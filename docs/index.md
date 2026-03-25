@@ -5,7 +5,7 @@ Gamage.
 
 ## Overview
 
-`ggscatie` is an R package that extends ggplot2 to create bivariate
+`ggscatite` is an R package that extends ggplot2 to create bivariate
 jittered scatterplots. This package provides specialized functionality
 for adding controlled random noise in two dimensions, making it easier
 to visualize overlapping data points in scatterplots where both x and y
