@@ -1,5 +1,5 @@
 
-`ggscatie` package <img src="man/figures/logo.png" align="right" height="139" alt="" />
+`ggscatite` package <img src="man/figures/logo.png" align="right" height="139" alt="" />
 ======================
 Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P., Gamage.
 
@@ -10,11 +10,11 @@ Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P., Gamage.
 
 ## Overview
 
-`ggscatie` is an R package that extends ggplot2 to create bivariate jittered scatterplots. This package provides specialized functionality for adding controlled random noise in two dimensions, making it easier to visualize overlapping data points in scatterplots where both x and y variables may have discrete or semi-discrete values.
+`ggscatite` is an R package that extends ggplot2 to create bivariate jittered scatterplots. This package provides specialized functionality for adding controlled random noise in two dimensions, making it easier to visualize overlapping data points in scatterplots where both x and y variables may have discrete or semi-discrete values.
 
 ## Description
 
-When creating scatterplots with discrete or rounded data, points often overlap, making it difficult to assess the true density and distribution of observations. While base R and ggplot2 provide one-dimensional jittering (typically along one axis), `ggscatie` extends this concept to apply jittering simultaneously to both x and y coordinates.
+When creating scatterplots with discrete or rounded data, points often overlap, making it difficult to assess the true density and distribution of observations. While base R and ggplot2 provide one-dimensional jittering (typically along one axis), `ggscatite` extends this concept to apply jittering simultaneously to both x and y coordinates.
 
 Currently there are two implemented methods:
 
@@ -24,14 +24,14 @@ Currently there are two implemented methods:
 
 ## Installation
 
-You can install the development version of ggscatie from GitHub:
+You can install the development version of `ggscatite` from GitHub:
 
 ```r
 # Install devtools if you haven't already
 install.packages("devtools")
 
 # Install ggscatie from GitHub
-devtools::install_github("natydasilva/ggscatie")
+devtools::install_github("natydasilva/ggscatite")
 ```
 
 ## Usage
