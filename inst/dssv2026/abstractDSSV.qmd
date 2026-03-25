@@ -21,7 +21,7 @@ format: html
 
 Overlapping points in scatterplots can hide important patterns, making it hard to see how data are distributed or related especially when values are discrete or take only a few levels. Jittering is often used to spread points apart, but most existing methods simply add small, independent noise to each axis.
 
-We introduce a new approach to jittering in two dimensions that spreads overlapping points more effectively while still reflecting the structure of the data. The method allows different ways of generating noise—such as uniform, Gaussian, or quasi-random (Sobolev) patterns and can also control the direction and alignment of the spread. This can be applied either across the whole dataset or locally, based on nearby points.
+We introduce a new approach to jittering in two dimensions that spreads overlapping points more effectively while still reflecting the structure of the data. The method allows different ways of generating noise such as uniform, Gaussian, or quasi-random (Sobolev) patterns and can also control the direction and alignment of the spread. This can be applied either across the whole dataset or locally, based on nearby points.
 
 These methods are implemented in the `ggscatie` R package, which extends `geom_jitter()` to support coordinated two-dimensional jittering. This gives users more control over how points are displayed and makes dense scatterplots easier to interpret.
 
