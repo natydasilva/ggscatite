@@ -2,7 +2,7 @@
 ^\.Rproj\.user$
 
 ^inst/sandbox$
-
+^inst/dssv2026$
 ^inst/refs$
 ^inst/paper$
 

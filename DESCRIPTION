@@ -1,4 +1,4 @@
-Package: ggscatie
+Package: ggscatite
 Title:  2D jittered scatterplot
 Version: 0.0.1
 Authors@R: 
@@ -25,7 +25,7 @@ Authors@R:
 Maintainer: Natalia da Silva <natalia.dasilva@fcea.edu.uy>
 Description:2D jittered scatterplot.
 License: GPL (>= 2)
-URL: https://github.com/natydasilva/jitter2D
+URL: https://github.com/natydasilva/ggscatite
 LazyData: yes
 Depends:
     R (>= 4.4.0)

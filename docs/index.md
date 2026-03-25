@@ -1,4 +1,4 @@
-# `ggscatie` package
+# `ggscatite` package
 
 Natalia da Silva, Ignacio Alvarez-Castro, Dianne Cook & Jayani P.,
 Gamage.
@@ -16,7 +16,7 @@ variables may have discrete or semi-discrete values.
 When creating scatterplots with discrete or rounded data, points often
 overlap, making it difficult to assess the true density and distribution
 of observations. While base R and ggplot2 provide one-dimensional
-jittering (typically along one axis), `ggscatie` extends this concept to
+jittering (typically along one axis), `ggscatite` extends this concept to
 apply jittering simultaneously to both x and y coordinates.
 
 Currently there are two implemented methods:
@@ -35,8 +35,8 @@ You can install the development version of ggscatie from GitHub:
 # Install devtools if you haven't already
 install.packages("devtools")
 
-# Install ggscatie from GitHub
-devtools::install_github("natydasilva/ggscatie")
+# Install ggscatite from GitHub
+devtools::install_github("natydasilva/ggscatite")
 ```
 
 ## Usage
