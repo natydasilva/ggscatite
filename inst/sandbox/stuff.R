@@ -1,5 +1,15 @@
 # Examples and attemps
 
+# ==================
+# dot plot with sleep data
+library(tidyverse)
+data(sleep)
+
+
+glimpse(sleep)
+
+
+# ==================
 library(ggplot2)
 devtools::load_all() # load jitter2d functions
 data(mpg)
